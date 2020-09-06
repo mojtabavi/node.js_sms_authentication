@@ -1,23 +1,16 @@
 {
-  "name": "node.js_sms_authentication",
-  "version": "1.0.0",
-  "description": "Authenticate User with Phone number and send sms",
-  "main": "index.js",
+  "name": "node.js-sms-authentication",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mojtabavi/node.js_sms_authentication.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mojtabavi/node.js_sms_authentication/issues"
-  },
-  "homepage": "https://github.com/mojtabavi/node.js_sms_authentication#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
   }
 }

@@ -1,6 +1,16 @@
 # node.js_sms_authentication
 Authenticate User with Phone number and send sms
 
-## TODO:
-    - [X] Module to send sms(sms.ir api)
+
+### Todo
+
+- [ ] Create a Module to send sms
+- [ ] Create a database with mongodb
+- [ ] Design UI
+
+### In Progress
+nothing !!!
+
+### Done ✓
+nothing !!!
     
