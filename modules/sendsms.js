@@ -35,7 +35,6 @@ async function sendMessage(receptor,message) {
         "Content-Type": "application/json",
         "x-sms-ir-secure-token": token,
     };
-    console.log(token)
     try {
         const res = await axios.post("https://RestfulSms.com/api/MessageSend", data, {
             headers: headers,

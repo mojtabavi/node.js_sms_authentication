@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>enter your number to register</title>
+</head>
+<body>
+<h3>Enter validation number to complete registration</h3>
+<form action="/users/validate?token=<%= token %>" method="post">
+    <input type="tel" name="validnum">
+    <input type="submit" value="submit">
+</form>
+
+</body>
+</html>
