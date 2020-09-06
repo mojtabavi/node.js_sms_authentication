@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 const userTokenModel = require('../models/userToken')
 const cryptoRandomString = require('crypto-random-string');
 const sendMessage = require('../modules/sendsms');
+const {phoneNormalize} = require('../modules/normalize')
 const bcrypt = require('bcrypt');
 const express = require('express');
 const router = express.Router();
@@ -15,7 +16,7 @@ router.get('/',(req,res) =>{
 /* GET users listing. */
 router.all('/register', function(req, res, next) {
   const token = cryptoRandomString({length: 24, type: 'url-safe'});
-  const phoneNumber = req.body.phone;
+  const phoneNumber = phoneNormalize(req.body.phone.toString());
   const salt = bcrypt.genSaltSync(10);
   const verifyNumber = cryptoRandomString({length:5,type:'numeric'});
   const hash = bcrypt.hashSync(verifyNumber, salt);
@@ -24,7 +25,7 @@ router.all('/register', function(req, res, next) {
   res.status(200).render('valid',{token:token});
   console.log(userToken)
   const message = `کد فعال سازی شما: ${verifyNumber}`
-  sendMessage(phoneNumber.toString(),message)
+  sendMessage(phoneNumber,message)
 
 
 });

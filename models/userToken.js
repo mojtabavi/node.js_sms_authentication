@@ -7,7 +7,7 @@ const userTokenSchema = new mongoose.Schema({
     },
     phone: {
         require: true,
-        type: Number,
+        type: String,
     },
     verifyNumber:{type:String,require:true},
     expire_at: {type: Date, default: Date.now, expires: 200}

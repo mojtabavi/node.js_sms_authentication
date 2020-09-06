@@ -22,6 +22,9 @@
     <list default="true" id="cafa2f7f-5260-4037-bfca-c3252815387f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/userToken.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/userToken.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/users.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +59,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/w/sms_verification/nodejs" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -70,7 +73,7 @@
       <option name="presentableId" value="Default" />
       <updated>1599393349165</updated>
       <workItem from="1599393350242" duration="9586000" />
-      <workItem from="1599405690060" duration="1117000" />
+      <workItem from="1599405690060" duration="1872000" />
     </task>
     <servers />
   </component>
@@ -90,10 +93,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="742" y="310" width="426" height="493" key="FileChooserDialogImpl" timestamp="1599394750271">
+    <state x="742" y="310" width="426" height="493" key="FileChooserDialogImpl" timestamp="1599407091556">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="742" y="310" width="426" height="493" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1599394750271" />
+    <state x="742" y="310" width="426" height="493" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1599407091556" />
     <state x="440" y="188" width="1039" height="737" key="SettingsEditor" timestamp="1599393810548">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>

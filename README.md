@@ -3,8 +3,7 @@ Authenticate User with Phone number and send sms
 
 
 ### Todo
-- [ ] work with localstorage to keep user login
-- [ ] nomalize phoneNumber
+- [ ] work with localstorage to keep user status
 - [ ] validate phoneNumber before send request for registration
 - [ ] Design UI
 
@@ -15,4 +14,5 @@ nothing !!!
 - [x] Create a database with mongodb
 - [x] expire userToken record after 5 minute
 - [x] crypt the validation number 
+- [x] nomalize phoneNumber
     
