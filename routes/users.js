@@ -31,6 +31,9 @@ router.all('/register', function(req, res, next) {
 });
 
 router.post('/validate/:token',(req,res) => {
+  if(req.params.token === '' || req.params.token === undefined){
+    res.status(404).send("404 Not Found");
+  }
   userTokenModel.findOne({ token: req.params.token }, function (err, doc) {
     console.log(`sent num is ${req.body.validnum}`);
     console.log(`doc is ${doc}`);

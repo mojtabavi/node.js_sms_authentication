@@ -3,6 +3,7 @@ Authenticate User with Phone number and send sms
 
 
 ### Todo
+- [ ] add 404 not found page
 - [ ] work with localstorage to keep user status
 - [ ] validate phoneNumber before send request for registration
 - [ ] Design UI
