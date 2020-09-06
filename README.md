@@ -3,14 +3,13 @@ Authenticate User with Phone number and send sms
 
 
 ### Todo
-
-- [ ] Create a Module to send sms
-- [ ] Create a database with mongodb
+- [ ] validate phoneNumber before send request for registration
 - [ ] Design UI
 
 ### In Progress
 nothing !!!
-
 ### Done ✓
-nothing !!!
+- [x] Create a Module to send sms
+- [x] Create a database with mongodb
+- [x] expire userToken record after 1 minute
     
