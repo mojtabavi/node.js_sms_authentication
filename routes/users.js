@@ -41,14 +41,13 @@ router.all('/register', function(req, res, next) {
 
 });
 
-router.post('/validate',(req,res) => {
-  userTokenModel.findOne({ token: req.query.token }, function (err, doc) {
+router.post('/validate/:token',(req,res) => {
+  userTokenModel.findOne({ token: req.params.token }, function (err, doc) {
     console.log(`sent num is ${req.body.validnum}`);
     console.log(`doc is ${doc}`);
     const result = bcrypt.compareSync(req.body.validnum, doc.verifyNumber);
     if(result){
-      const removeItem = userTokenModel.remove({ token: req.query.token });
-      console.log(removeItem.deletedCount); // Number of documents removed
+      doc.remove();
       res.status(200).send("ok you register succesfully");
     } else{
       res.status(401).render('valid',{token:req.query.token});
