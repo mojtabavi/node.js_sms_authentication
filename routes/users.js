@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const userTokenModel = require('../models/userToken')
 const cryptoRandomString = require('crypto-random-string');
 const sendMessage = require('../modules/sendsms');
 const bcrypt = require('bcrypt');
@@ -6,19 +7,6 @@ const express = require('express');
 const router = express.Router();
 
 
-const userTokenSchema = new mongoose.Schema({
-  token: {
-    require:true,
-    type: String,
-  },
-  phone: {
-    require: true,
-    type: Number,
-  },
-  verifyNumber:{type:String,require:true},
-  expire_at: {type: Date, default: Date.now, expires: 200}
-});
-const userTokenModel = mongoose.model('userToken', userTokenSchema);
 
 router.get('/',(req,res) =>{
   res.render('register')

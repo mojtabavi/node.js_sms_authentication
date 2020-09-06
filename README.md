@@ -3,6 +3,7 @@ Authenticate User with Phone number and send sms
 
 
 ### Todo
+- [ ] work with localstorage to keep user login
 - [ ] nomalize phoneNumber
 - [ ] validate phoneNumber before send request for registration
 - [ ] Design UI
